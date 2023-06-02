@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { Tabs } from "expo-router";
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Tela A</Text>
-    
+      <Text style={styles.titulo}>Cadasto</Text>
+      
       <StatusBar style="auto" />
     </View>
   );
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
   },
 
 
-titulo: {
+
+  titulo: {
 
     fontSize: 26,
     fontWeight: 'bold',

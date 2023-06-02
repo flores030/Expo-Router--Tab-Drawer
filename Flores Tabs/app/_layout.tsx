@@ -13,22 +13,33 @@ export default function AppLayout() {
       />
          <Tabs.Screen
     
-         name="telaA"
+         name="Sobre"
         options={{
 
-        href: 'telaA',
+        href:'null',
     }}
   />
         <Tabs.Screen
 
-         name="telaB"
+         name="Cadastro"
          options={{
 
-         href: 'null',
+         href:'null',
          
           // para esconder
     }}
   />
+  <Tabs.Screen
+
+name="Home"
+options={{
+
+href:'home',
+
+
+}}
+/>
+
     </Tabs>
   );
 }
