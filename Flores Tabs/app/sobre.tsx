@@ -1,12 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { Tabs } from "expo-router";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}> App do Flores</Text>
+      <div className='App'> </div>
+  
+      <Image
+        style={styles.imagem}
+        source={require('../assets/laranja.png')}
+      />
+
+
+
+      <Text style={styles.titulo}> App do Flores </Text>
       <Text style={styles.texto}> TEXTO ALEATORIO TEXTO ALEATORIO  TEXTO ALEATORIO  TEXTO ALEATORIO   </Text>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -21,22 +31,29 @@ const styles = StyleSheet.create({
   },
 
 
-titulo: {
-
+  titulo: {
     fontSize: 26,
     fontWeight: 'bold',
-  },
+    justifyContent:'center',
+    marginLeft: -30,
 
+  },
 
   texto: {
     flex: 1,
     fontSize: 20,
     alignItems: 'center',
     maxHeight: '90px',
-    maxWidth: '200px',
-  
-    justifyContent:'center',
+    maxWidth: '190px',
+    justifyContent:'justify',
+
+  },
+
+
+  imagem: {
+    alignItems: 'center',
+    maxWidth:'100px',
+    maxHeight: '100px'
 
   }
-  
 });

@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import { Tabs } from "expo-router";
 import { TextComponent } from 'react-native/Libraries/Text/Text';
 import React from "react";
@@ -10,9 +10,15 @@ export default function App() {
   return (
     <View style={styles.container}>
       <div className='App'> </div>
+  
+      <Image
+        style={styles.imagem}
+        source={require('../assets/laranja.png')}
+      />
 
 
-      <Text style={styles.titulo}> App do Flores </Text>
+
+      <Text style={styles.titulo}> App do Flores Index </Text>
       <Text style={styles.texto}> TEXTO ALEATORIO TEXTO ALEATORIO  TEXTO ALEATORIO  TEXTO ALEATORIO   </Text>
 
       <StatusBar style="auto" />
@@ -32,7 +38,8 @@ const styles = StyleSheet.create({
   titulo: {
     fontSize: 26,
     fontWeight: 'bold',
-
+    justifyContent:'center',
+    marginLeft: -30,
 
   },
 
@@ -41,9 +48,16 @@ const styles = StyleSheet.create({
     fontSize: 20,
     alignItems: 'center',
     maxHeight: '90px',
-    maxWidth: '200px',
-  
-    justifyContent:'center',
+    maxWidth: '190px',
+    justifyContent:'justify',
+
+  },
+
+
+  imagem: {
+    alignItems: 'center',
+    maxWidth:'100px',
+    maxHeight: '100px'
 
   }
 

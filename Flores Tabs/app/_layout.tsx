@@ -16,7 +16,7 @@ export default function AppLayout() {
          name="Sobre"
         options={{
 
-        href:'null',
+        href:null,
     }}
   />
         <Tabs.Screen
