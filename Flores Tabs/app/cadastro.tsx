@@ -33,15 +33,18 @@ const MyForm: React.FC = () => {
     
     <div style={styles.texto}>
       <div>
- 
+
+  <Text style={styles.titulo}> App do Flores Cad </Text>
   <Image
     style={styles.imagem}
     source={require('../assets/laranja.png')}
   />
+  
         
       </div>
         <div className='App'> </div>
  
+
 
       <label>
         Nome:
@@ -78,11 +81,7 @@ const styles = StyleSheet.create({
   },
 
 
-titulo: {
 
-    fontSize: 26,
-    fontWeight: 'bold',
-  },
 
 
   texto: {
@@ -93,14 +92,26 @@ titulo: {
     maxWidth: '200px',
     marginLeft: '900px',
     justifyContent:'center',
+    marginTop: '200px',
 
   },
   
+  titulo: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    justifyContent:'center',
+    marginLeft: -70,
+
+  },
+
   imagem: {
     alignItems: 'center',
     maxWidth:'100px',
     maxHeight: '100px'
 
-  }
+  },
+
+  
+
 
 });

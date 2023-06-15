@@ -40,13 +40,12 @@ const styles = StyleSheet.create({
   },
 
   texto: {
-    flex: 1,
+     
     fontSize: 20,
     alignItems: 'center',
-    maxHeight: '90px',
-    maxWidth: '190px',
-    justifyContent:'justify',
-
+    maxHeight: '70px',
+    maxWidth: '170px',
+   
   },
 
 

@@ -17,10 +17,11 @@ export default function App() {
       />
 
 
-
+      
+    
       <Text style={styles.titulo}> App do Flores Index </Text>
       <Text style={styles.texto}> TEXTO ALEATORIO TEXTO ALEATORIO  TEXTO ALEATORIO  TEXTO ALEATORIO   </Text>
-
+      
       <StatusBar style="auto" />
     </View>
   );
@@ -44,13 +45,12 @@ const styles = StyleSheet.create({
   },
 
   texto: {
-    flex: 1,
+     
     fontSize: 20,
     alignItems: 'center',
-    maxHeight: '90px',
-    maxWidth: '190px',
-    justifyContent:'justify',
-
+    maxHeight: '70px',
+    maxWidth: '170px',
+   
   },
 
 
