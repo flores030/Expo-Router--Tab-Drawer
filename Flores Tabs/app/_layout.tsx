@@ -16,7 +16,7 @@ export default function AppLayout() {
          name="Sobre"
         options={{
 
-        href:null,
+        href: 'sobre',
     }}
   />
         <Tabs.Screen
@@ -24,7 +24,7 @@ export default function AppLayout() {
          name="Cadastro"
          options={{
 
-         href:'null',
+         href:'cadastro',
          
           // para esconder
     }}

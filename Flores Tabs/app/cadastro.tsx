@@ -1,16 +1,73 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import React, { useState } from 'react';
+import { Tabs } from "expo-router";
+import { TextComponent } from 'react-native/Libraries/Text/Text';
 
 
-export default function App() {
+const MyForm: React.FC = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [birthdate, setBirthdate] = useState('');
+  const [cpf, setCPF] = useState('');
+
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleBirthdateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setBirthdate(event.target.value);
+  };
+
+  const handleCPFChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCPF(event.target.value);
+  };
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.titulo}>Cadasto</Text>
-      
-      <StatusBar style="auto" />
-    </View>
+
+
+    
+    <div style={styles.texto}>
+      <div>
+ 
+  <Image
+    style={styles.imagem}
+    source={require('../assets/laranja.png')}
+  />
+        
+      </div>
+        <div className='App'> </div>
+ 
+
+      <label>
+        Nome:
+        <input type="text" value={name} onChange={handleNameChange} />
+      </label>
+      <br />
+      <label>
+        Email:
+        <input type="text" value={email} onChange={handleEmailChange} />
+      </label>
+      <br />
+      <label>
+        Data de Nascimento:
+        <input type="text" value={birthdate} onChange={handleBirthdateChange} />
+      </label>
+      <br />
+      <label>
+        CPF:
+        <input type="text" value={cpf} onChange={handleCPFChange} />
+      </label>
+    </div>
+    
   );
-}
+};
+
+export default MyForm;
 
 const styles = StyleSheet.create({
   container: {
@@ -21,10 +78,29 @@ const styles = StyleSheet.create({
   },
 
 
-
-  titulo: {
+titulo: {
 
     fontSize: 26,
     fontWeight: 'bold',
+  },
+
+
+  texto: {
+    flex: 1,
+    fontSize: 20,
+    alignItems: 'center',
+    maxHeight: '90px',
+    maxWidth: '200px',
+    marginLeft: '900px',
+    justifyContent:'center',
+
+  },
+  
+  imagem: {
+    alignItems: 'center',
+    maxWidth:'100px',
+    maxHeight: '100px'
+
   }
+
 });
