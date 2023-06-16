@@ -16,6 +16,7 @@ export default function App() {
 
 
       <Text style={styles.titulo}> App do Flores </Text>
+      <Link href="/cadastro">Ir para o Cadastro</Link>
       <Text style={styles.texto}> TEXTO ALEATORIO TEXTO ALEATORIO  TEXTO ALEATORIO  TEXTO ALEATORIO   </Text>
 
       <StatusBar style="auto" />

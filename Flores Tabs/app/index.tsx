@@ -16,7 +16,10 @@ export default function App() {
         source={require('../assets/laranja.png')}
       />
 
-
+ 
+      <Link href="/home">Ir para o Home</Link>
+      <StatusBar style="auto" />
+     
       
     
       <Text style={styles.titulo}> App do Flores Index </Text>

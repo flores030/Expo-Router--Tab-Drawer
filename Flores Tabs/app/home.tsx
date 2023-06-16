@@ -11,6 +11,7 @@ export default function App() {
       
       <View style={styles.container}>
         <Text style={styles.titulo}> App do Flores</Text>
+        <Link href="/sobre">Ir para o Sobre</Link>
         <Text style={styles.texto}> TEXTO ALEATORIO TEXTO ALEATORIO  TEXTO ALEATORIO  TEXTO ALEATORIO   </Text>
         <StatusBar style="auto" />
       </View>
