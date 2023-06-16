@@ -3,11 +3,12 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { Tabs } from "expo-router";
 import { TextComponent } from 'react-native/Libraries/Text/Text';
 import React from "react";
-
+import { Link } from "expo-router";
 
 
 export default function App() {
     return (
+      
       <View style={styles.container}>
         <Text style={styles.titulo}> App do Flores</Text>
         <Text style={styles.texto}> TEXTO ALEATORIO TEXTO ALEATORIO  TEXTO ALEATORIO  TEXTO ALEATORIO   </Text>

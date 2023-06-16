@@ -1,4 +1,5 @@
 import { Tabs } from "expo-router";
+import { Link } from "expo-router";
 
 export default function AppLayout() {
   return (

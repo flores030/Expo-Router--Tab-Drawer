@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { Tabs } from "expo-router";
 import { TextComponent } from 'react-native/Libraries/Text/Text';
 import React from "react";
-
+import { Link } from "expo-router";
 
 
 export default function App() {

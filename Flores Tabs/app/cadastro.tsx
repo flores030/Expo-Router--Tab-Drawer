@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Touchable } from 'react-native';
 import React, { useState } from 'react';
 import { Tabs } from "expo-router";
 import { TextComponent } from 'react-native/Libraries/Text/Text';
-
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { Link } from "expo-router";
 
 const MyForm: React.FC = () => {
   const [name, setName] = useState('');
@@ -44,7 +45,7 @@ const MyForm: React.FC = () => {
       </div>
         <div className='App'> </div>
  
-
+        
 
       <label>
         Nome:
@@ -65,7 +66,24 @@ const MyForm: React.FC = () => {
         CPF:
         <input type="text" value={cpf} onChange={handleCPFChange} />
       </label>
+
+      <div style={styles.botao}>
+    <TouchableOpacity>
+      <Text>Voltar </Text>
+    </TouchableOpacity>
+    <TouchableOpacity>
+      <Text>Salvar </Text>
+    </TouchableOpacity>
+    
+</div>
+
+<View style={styles.container}>
+      <Link href="/">Ir para o Index</Link>
+      <StatusBar style="auto" />
+    </View>
+
     </div>
+
     
   );
 };
@@ -110,6 +128,11 @@ const styles = StyleSheet.create({
     maxHeight: '100px'
 
   },
+
+botao: {
+
+}
+ 
 
   
 
