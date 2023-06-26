@@ -20,8 +20,7 @@ export default function App() {
   
   const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#fff',
+      marginTop: '300px',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -35,11 +34,13 @@ export default function App() {
   
   
     texto: {
-      flex: 1,
+      backgroundColor: 'blue',
+      maxHeight: '100%',
+      maxWidth: '100%',
+      width: '178px',
       fontSize: 20,
       alignItems: 'center',
-      maxHeight: '90px',
-      maxWidth: '200px',
+      
     
       justifyContent:'center',
   

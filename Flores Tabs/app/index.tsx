@@ -48,12 +48,13 @@ const styles = StyleSheet.create({
   },
 
   texto: {
-     
+    backgroundColor: 'blue',
+    maxHeight: '100%',
+    maxWidth: '100%',
+    width: '178px',
     fontSize: 20,
     alignItems: 'center',
-    maxHeight: '70px',
-    maxWidth: '170px',
-   
+    justifyContent:'center',
   },
 
 

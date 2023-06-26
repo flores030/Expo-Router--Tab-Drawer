@@ -26,8 +26,6 @@ export default function AppLayout() {
          options={{
 
          href:'cadastro',
-         
-          // para esconder
     }}
   />
   <Tabs.Screen
@@ -35,7 +33,7 @@ export default function AppLayout() {
 name="Home"
 options={{
 
-href:'home',
+href: null,
 
 
 }}

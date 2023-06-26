@@ -26,8 +26,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    marginTop: '300px',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -43,11 +42,13 @@ const styles = StyleSheet.create({
 
   texto: {
      
+    backgroundColor: 'blue',
+    maxHeight: '100%',
+    maxWidth: '100%',
+    width: '178px',
     fontSize: 20,
     alignItems: 'center',
-    maxHeight: '70px',
-    maxWidth: '170px',
-   
+    justifyContent:'center',
   },
 
 
